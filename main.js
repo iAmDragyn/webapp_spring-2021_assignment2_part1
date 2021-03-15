@@ -21,6 +21,8 @@ const app = Vue.createApp({
             if (this.startingBook > 0) {
                 document.querySelector("#previousButton").classList.remove("invisible");
             }
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             this.$forceUpdate();
         },
         previousBook() {
@@ -30,10 +32,9 @@ const app = Vue.createApp({
             if (this.startingBook < 30) {
                 document.querySelector("#nextButton").classList.add("invisible");
             }
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             this.$forceUpdate();
         },
     }
 })
-
-
-
