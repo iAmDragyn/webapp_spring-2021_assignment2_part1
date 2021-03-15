@@ -33,7 +33,7 @@
         </form>
 
         <div id="mainDiv" class="results text-center">
-            <div class="row col-sm-5" v-if="result != null"> {{ (result != null)?result.totalItems:'' }}
+            <div class="row col-sm-5" v-if="result != null"> {{(result != null)?result.totalItems:'' }}
                 Results </div>
             <div class="row">
                 <book-display v-if="result != null" v-for=" (book, index) in result.items" :key="book.id"
