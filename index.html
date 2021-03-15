@@ -31,14 +31,25 @@
                 <button type="submit" class="btn btn-outline-dark"> Look! </button>
             </div>
         </form>
+
         <div id="mainDiv" class="results text-center">
-            <div class="row col-sm-5" v-if="result != null"> found {{ (result != null)?result.totalItems:'' }} </div>
+            <div class="row col-sm-5" v-if="result != null"> Showing 30 from {{ (result != null)?result.totalItems:'' }}
+                results </div>
             <div class="row">
                 <book-display v-if="result != null" v-for=" (book, index) in result.items" :key="book.id"
                     :book="JSON.stringify(book)"> </book-display>
             </div>
         </div>
+
+        <div id="paginationButtons" class="invisible">
+            <div class="my-auto mx-auto text-center pageButtons">
+                <button onclick="previousPage()" id="previousButton" type="button"
+                    class="btn btn-outline-dark invisible"> Previous </button>
+                <button onclick="nextPage()" id="nextButton" type="button" class="btn btn-dark"> Next </button>
+            </div>
+        </div>
     </div>
+
     <footer class="text-center">
         <h8> © Copyright Google Books </h8>
     </footer>
