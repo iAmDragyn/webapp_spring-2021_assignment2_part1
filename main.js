@@ -28,7 +28,7 @@ const app = Vue.createApp({
             this.searchGoogleBooks();
             console.log(this.startingBook);
             if (this.startingBook < 30) {
-                document.querySelector("#paginationButtons").classList.add("invisible");
+                document.querySelector("#nextButton").classList.add("invisible");
             }
             this.$forceUpdate();
         },
