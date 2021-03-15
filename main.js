@@ -30,7 +30,7 @@ const app = Vue.createApp({
             this.searchGoogleBooks();
             console.log(this.startingBook);
             if (this.startingBook < 30) {
-                document.querySelector("#nextButton").classList.add("invisible");
+                document.querySelector("#previousButton").classList.add("invisible");
             }
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
