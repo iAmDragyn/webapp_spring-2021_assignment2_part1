@@ -13,11 +13,11 @@
 <br>
 **Technologies used:** HTML5, CSS3, Native Javascript, Vue.js for code, Visual Studio Code for development and testing, Google Chrome browser for testing, Windows 10 OS <br>
 <br>
-**Justification in design choices:** COMING SOON <br>
+**Justification in design choices:** We decided to go with Vue.js for the visual infrastructure of our Google Books website, because it's what we've become most familiar with throughout the course. For layout and additional attributes to display, we decided that the thumbnail should go first, followed by title, author, year, publisher, and accompanied by information like main category/genre, a brief description, and a price. Some of these additional fields were not available for all books, but if you scroll through enough, there should be some with all fields present. Pagination was done using Vue and plain Javascript and works to display the next set of books available. <br>
 <br>
 **Extra features:**  No extra features to document. <br>
 <br>
-**Nu HTML Checker status:** COMING SOON <br>
+**Nu HTML Checker status:** Nu HTML checked passed for all html elements and rules; however, there were warnings about vue syntax within html tags, such as @submit, :key, v-if, v-for. We believe we still pass the tests though, because we followed the rules used by Dr. Jafarian for integrating any vue into our html. <br>
 <br>
 **Check it out:**  https://iamdragyn.github.io/webapp_spring-2021_assignment2_part1/
 <br>
